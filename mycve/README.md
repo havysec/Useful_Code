@@ -12,3 +12,5 @@
 [CVE-2018-13122](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-13122)
 
 [CVE-2018-13123](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-13123)
+
+[CVE-2018-14579](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14579)
